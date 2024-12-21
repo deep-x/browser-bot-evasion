@@ -12,7 +12,7 @@ import firefox from "selenium-webdriver/firefox";
 
 const options = new firefox.Options()
   // .setBinary("/Applications/Camoufox.app/Contents/MacOS/camoufox");
-  .setBinary("/Applications/Firefox.app/Contents/MacOS/firefox");
+  .setBinary(process.env["FIREFOX_PATH"]!);
 // .addArguments("--headless")
 // .setPreference("devtools.debugger.remote-enabled", true)
 // .setPreference("devtools.chrome.enabled", true);

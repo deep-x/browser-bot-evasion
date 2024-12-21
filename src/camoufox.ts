@@ -21,6 +21,7 @@ const options = new firefox.Options()
 const driver = await new Builder()
   .forBrowser("firefox")
   .setFirefoxOptions(options)
+  .setLoggingPrefs({ browser: "ALL" })
   .build();
 
 // === === === === === === === === === === === === === === === === === ===

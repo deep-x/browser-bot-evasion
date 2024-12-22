@@ -76,3 +76,25 @@ to Playwright, since that is what the official camoufox python package was using
 
 - At the time of this writing using Bun on my machine (M2 Mac) to run the camoufox script
 resulted in it freezing up on me. When I switched to using Node (using tsx) it worked fine.
+
+## References & Sources
+- Browser hardening technologies
+  * https://github.com/kaliiiiiiiiii/brotector
+  * https://github.com/Kaliiiiiiiiii-Vinyzu/patchright
+  * https://github.com/prescience-data/harden-puppeteer
+  * https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth
+  * https://github.com/rebrowser/rebrowser-patches
+  * https://github.com/daijro/camoufox
+- Browser bot detection tests
+  * https://bot-detector.rebrowser.net/
+  * https://abrahamjuliot.github.io/creepjs/
+  * https://tcpip.incolumitas.com/classify?by_ip=1&detail=1
+  * https://antcpt.com/score_detector/
+  * https://proxy.incolumitas.com/proxy_detect.html
+- Articles & Writings
+  * https://cpa.rip/stati/antidetect-palivo/
+- Other technologies
+  * https://www.docker.com/
+  * https://bun.sh/
+  * https://nodejs.org/
+  * https://playwright.dev/

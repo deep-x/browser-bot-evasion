@@ -2,16 +2,24 @@
   "name": "rebrowser-tests",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "tsx": "dotenv -e .env -- tsx"
+  },
   "devDependencies": {
     "@types/bun": "latest",
+    "@types/fs-extra": "^11.0.4",
     "@types/selenium-webdriver": "^4.1.27"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "dotenv-cli": "^8.0.0",
+    "fs-extra": "^11.2.0",
+    "playwright": "^1.49.1",
     "playwright-core": "^1.49.1",
     "puppeteer-core": "^23.10.1",
-    "selenium-webdriver": "^4.27.0"
+    "selenium-webdriver": "^4.27.0",
+    "tsx": "^4.19.2"
   }
 }

@@ -24,27 +24,33 @@
 - Using the [camoufox browser](https://github.com/daijro/camoufox)
 - Using the [rebrowser patches](https://github.com/rebrowser/rebrowser-patches)
 
-## Development
+## Third Party providers that are being tested
 
-### Install Dependencies
-```bash
-bun install
-```
+- https://www.browserbase.com/
+  * https://github.com/browserbase/stagehand
+- https://github.com/steel-dev/steel-browser/
+- https://www.browserless.io/
 
-### Create and fill .env
+## Scores
 
-```bash
-cp .env.example .env
-```
+- vanilla firefox
+- vanilla chromium
+- vanilla chrome
 
-### Generate the Report
-```bash
-# if you want to use bun
-bun run src/report.ts
+- camoufox
+- brave
+- rebrowser
 
-# or if you want to use node
-npm run tsx src/report.ts
-```
+- steel-dev/steel-browser
+- browserbase/stagehand
+
+## Feature Testing
+
+Due to some unexpected errors happening while I was testing different browser flavours
+on my local machine, I decided it was good to run a couple of tests with common
+automation patterns. These include the following:
+- visiting 10 pages one after the other with a couple of seconds of delay in-between
+- using the `waitForResponse` functionality
 
 ## A note on [puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth)
 
@@ -77,6 +83,28 @@ to Playwright, since that is what the official camoufox python package was using
 - At the time of this writing using Bun on my machine (M2 Mac) to run the camoufox script
 resulted in it freezing up on me. When I switched to using Node (using tsx) it worked fine.
 
+## Development
+
+### Install Dependencies
+```bash
+bun install
+```
+
+### Create and fill .env
+
+```bash
+cp .env.example .env
+```
+
+### Generate the Report
+```bash
+# if you want to use bun
+bun run src/report.ts
+
+# or if you want to use node
+npm run tsx src/report.ts
+```
+
 ## References & Sources
 - Browser hardening technologies
   * https://github.com/kaliiiiiiiiii/brotector
@@ -95,6 +123,8 @@ resulted in it freezing up on me. When I switched to using Node (using tsx) it w
 
 - Articles & Writings
   * https://cpa.rip/stati/antidetect-palivo/
+  * https://github.com/abrahamjuliot/web-fingerprinting
+  * https://github.com/TheGP/untidetect-tools
 
 - Other technologies
   * https://www.docker.com/

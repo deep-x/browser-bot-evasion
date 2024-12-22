@@ -85,14 +85,17 @@ resulted in it freezing up on me. When I switched to using Node (using tsx) it w
   * https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth
   * https://github.com/rebrowser/rebrowser-patches
   * https://github.com/daijro/camoufox
+
 - Browser bot detection tests
   * https://bot-detector.rebrowser.net/
   * https://abrahamjuliot.github.io/creepjs/
   * https://tcpip.incolumitas.com/classify?by_ip=1&detail=1
   * https://antcpt.com/score_detector/
   * https://proxy.incolumitas.com/proxy_detect.html
+
 - Articles & Writings
   * https://cpa.rip/stati/antidetect-palivo/
+
 - Other technologies
   * https://www.docker.com/
   * https://bun.sh/

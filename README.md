@@ -52,10 +52,13 @@ This package was, to my knowledge, one of the first pioneering attempts of evadi
 detection technology. However it has not been significantly updated in the last ~2 years
 (as the time of this writing) and after testing it on a lot of different bot detection
 sites its methods actually led to the browser being detected as a bot even more, than without it.
+
 This may partly be because of its popularity and open-source nature, that bot detector sites
 were able to look for the techniques being used in this library specifically and easily
-detect them. Since it is a collection of plugins, there are still some plugins that can
-be used. However just dropping it in with the default configuration is quite dangerous.
+detect them.
+
+Since it is a collection of plugins, there are still some plugins that can be used.
+However just dropping it in with the default configuration is quite dangerous.
 
 ## A note on [Rebrowser](https://github.com/rebrowser/rebrowser-patches)
 

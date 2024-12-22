@@ -19,6 +19,11 @@
 - https://proxy.incolumitas.com/proxy_detect.html
 - https://cpa.rip/stati/antidetect-palivo/
 
+## Technologies being used to evade bot detection
+
+- Using the [camoufox browser](https://github.com/daijro/camoufox)
+- Using the [rebrowser patches](https://github.com/rebrowser/rebrowser-patches)
+
 ## Development
 
 ### Install Dependencies
@@ -40,6 +45,17 @@ bun run src/report.ts
 # or if you want to use node
 npm run tsx src/report.ts
 ```
+
+## A note on [puppeteer-extra-plugin-stealth](https://github.com/berstend/puppeteer-extra/tree/master/packages/puppeteer-extra-plugin-stealth)
+
+This package was, to my knowledge, one of the first pioneering attempts of evading bot
+detection technology. However it has not been significantly updated in the last ~2 years
+(as the time of this writing) and after testing it on a lot of different bot detection
+sites its methods actually led to the browser being detected as a bot even more, than without it.
+This may partly be because of its popularity and open-source nature, that bot detector sites
+were able to look for the techniques being used in this library specifically and easily
+detect them. Since it is a collection of plugins, there are still some plugins that can
+be used. However just dropping it in with the default configuration is quite dangerous.
 
 ## A note on [Rebrowser](https://github.com/rebrowser/rebrowser-patches)
 

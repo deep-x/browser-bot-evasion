@@ -2,10 +2,10 @@
 
 ## Prerequisites
 
-### Required
+**Required:**
 - https://bun.sh/
 
-### Optional
+**Optional:**
 - https://nodejs.org/
 - https://www.docker.com/
 - A http or socks5 proxy

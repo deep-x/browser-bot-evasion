@@ -41,11 +41,11 @@ bun run src/report.ts
 npm run tsx src/report.ts
 ```
 
-## A note on Rebrowser
+## A note on [Rebrowser](https://github.com/rebrowser/rebrowser-patches)
 
 ...
 
-## A note on Camoufox
+## A note on [Camoufox](https://github.com/daijro/camoufox)
 
 - Using playwright with firefox on my M2 Mac resulted in unexplainable errors,
 that I did not want to spend a lot of time on debugging so everything got wrapped in

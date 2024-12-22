@@ -11,3 +11,7 @@ export function parseProxyCredentials(value: string) {
 export async function sleep(ms: number) {
   await new Promise((r) => setTimeout(r, ms));
 }
+
+export function getBrowserscanCookieDialogButtonSelector() {
+  "button.fc-button.fc-cta-do-not-consent";
+}

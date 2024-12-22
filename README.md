@@ -34,8 +34,11 @@ cp .env.example .env
 
 ### Generate the Report
 ```bash
-bun run src/report.ts     # if you want to use bun
-npm run tsx src/report.ts # if you want to use node
+# if you want to use bun
+bun run src/report.ts
+
+# or if you want to use node
+npm run tsx src/report.ts
 ```
 
 ## A note on Rebrowser

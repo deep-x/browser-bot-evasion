@@ -4,6 +4,7 @@ import { sleep } from "./lib";
 const executablePath = process.env["FIREFOX_PATH"]!;
 
 const browser = await firefox.launchPersistentContext("/tmp/camoufox", {
+  executablePath,
   headless: true,
 });
 

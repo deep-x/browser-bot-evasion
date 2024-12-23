@@ -125,6 +125,11 @@ npm run tsx src/report.ts
   * https://cpa.rip/stati/antidetect-palivo/
   * https://github.com/abrahamjuliot/web-fingerprinting
   * https://github.com/TheGP/untidetect-tools
+  * https://www.sciencedirect.com/science/article/pii/S0950705121003373
+  * https://arxiv.org/pdf/2406.07647
+  * https://eprints.bournemouth.ac.uk/32523/1/paper_82.pdf
+  * https://antoinevastel.com/javascript/2020/02/09/detecting-web-bots.html
+  * https://upcommons.upc.edu/bitstream/handle/2117/386442/Master_Thesis_Santi_Escuder.pdf?sequence=6&isAllowed=y
 
 - Other technologies
   * https://www.docker.com/

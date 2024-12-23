@@ -2,43 +2,7 @@ import { chromium } from "playwright-core";
 import { parseProxyCredentials } from "./lib";
 
 const executablePath = import.meta.env["CHROMIUM_PATH"]!;
-
 const proxy = import.meta.env["HTTP_PROXY"];
-
-process.env.TZ = "Europe/Berlin";
-
-const args = [
-  "--flag-switches-begin",
-  "--flag-switches-end",
-  "--origin-trial-disabled-features=WebGPU",
-  "--disable-blink-features=AutomationControlled",
-  "--window-position=0,0",
-  "--hide-crash-restore-bubble",
-  "--enable-automation",
-  "--no-sandbox",
-  "--no-default-browser-check",
-
-  // Graphics/GPU related
-  "--enable-webgl",
-  "--use-gl=swiftshader",
-  "--enable-accelerated-2d-canvas",
-  "--force-gpu-rasterization",
-  "--high-dpi-support=1",
-
-  // Features and APIs
-  "--force-dark-mode",
-  "--enable-features=WebContentsForceDark,ContentIndex,ContactsManager,WindowControlsOverlay,NetworkServiceInProcess,DarkMode",
-  "--enable-system-notifications",
-  "--disable-zero-copy",
-  "--force-color-profile=srgb",
-
-  // WebRTC protection
-  "--disable-webrtc",
-  "--enforce-webrtc-ip-permission-check",
-  "--disable-webrtc-hw-encoding",
-  "--disable-webrtc-hw-decoding",
-  "--force-webrtc-ip-handling-policy=default_public_interface_only",
-];
 
 const proxyCreds = proxy === undefined ? null : parseProxyCredentials(proxy);
 const browser = await chromium.launchPersistentContext("/tmp/playwright", {

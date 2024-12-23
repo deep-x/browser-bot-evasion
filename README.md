@@ -35,7 +35,6 @@
 
 - vanilla firefox
 - vanilla chromium
-- vanilla chrome
 
 - camoufox
 - brave
@@ -88,6 +87,17 @@ resulted in it freezing up on me. When I switched to using Node (using tsx) it w
 ### Install Dependencies
 ```bash
 bun install
+```
+
+### Install Browsers
+```bash
+bunx playwright install chromium
+bunx playwright install firefox
+
+curl -fsS https://dl.brave.com/install.sh | sh
+
+pipx install "camoufox[geoip]"
+camoufox fetch
 ```
 
 ### Create and fill .env
